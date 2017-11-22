@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Just-coffe</string>
+    <string name="toppings">Toppings</string>
+    <string name="quantity">Quantity</string>
+    <string name="summer_order">Order Summary</string>
+    <string name="customer_name">name :</string>
+    <string name="add_flaver">Add Flaver ?</string>
+    <string name="total">total</string>
+    <string name="thanks">Thank you!!</string>
+</resources>
