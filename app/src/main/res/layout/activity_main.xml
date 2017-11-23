@@ -29,12 +29,13 @@
        android:layout_height="0dp" />
 
        <CheckBox
-           android:text="Whipped"
-           android:layout_width="wrap_content"
            android:id="@+id/cBox_2"
-           android:padding="5dp"
+           android:layout_width="wrap_content"
+           android:layout_height="0dp"
            android:layout_weight="1"
-           android:layout_height="0dp" />
+           android:checked="false"
+           android:padding="5dp"
+           android:text="Whipped" />
    </LinearLayout>
 
     <TextView
@@ -78,6 +79,13 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
 
+    <EditText
+        android:id="@+id/et_customer_name"
+        android:hint="please enter your name."
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <TextView
         android:text="@string/summer_order"
         android:gravity="center"
@@ -90,6 +98,8 @@
 
    <RelativeLayout
        android:layout_marginTop="24dp"
+       android:visibility="gone"
+       android:id="@+id/show_info_order"
        android:padding="16dp"
        android:layout_width="match_parent"
        android:layout_height="wrap_content">
@@ -110,7 +120,7 @@
 
        <TextView
            android:text="@string/add_flaver"
-           android:id="@+id/txv_flaver"
+           android:id="@+id/txv_flavor"
            android:layout_marginRight="5dp"
            android:layout_below="@id/txv_name"
            android:layout_width="wrap_content"
@@ -118,54 +128,56 @@
 
        <TextView
            android:layout_below="@id/txv_name"
-           android:id="@+id/txv_get_flaver"
+           android:id="@+id/txv_get_flavor"
            android:hint=" Here Show which flaver custo"
-           android:layout_toRightOf="@id/txv_flaver"
+           android:layout_toRightOf="@id/txv_flavor"
            android:gravity="center"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
 
        <TextView
            android:text="Quantity : "
-           android:id="@+id/txv_total"
-           android:layout_below="@id/txv_flaver"
+           android:id="@+id/txv_show_quantity"
+           android:layout_below="@id/txv_flavor"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
 
        <TextView
-           android:id="@+id/txv_total_price"
+           android:id="@+id/txv_total_cups"
            android:hint=" Here show total price."
-           android:layout_toRightOf="@id/txv_total"
-           android:layout_below="@id/txv_flaver"
+           android:layout_toRightOf="@id/txv_show_quantity"
+           android:layout_below="@id/txv_flavor"
            android:gravity="center"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
 
 
        <TextView
-           android:layout_below="@id/txv_total"
-           android:id="@+id/txv_quantity"
+           android:layout_below="@id/txv_show_quantity"
+           android:id="@+id/txv_total"
            android:text="Totoal :"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
        <TextView
-           android:layout_below="@id/txv_total"
-           android:layout_toRightOf="@id/txv_quantity"
+           android:layout_below="@id/txv_show_quantity"
+           android:layout_toRightOf="@id/txv_total"
            android:hint="Here show cups quantity"
            android:gravity="center"
-           android:id="@+id/txv_price"
+           android:id="@+id/txv_total_price"
            android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:text="@string/thanks"
+           android:layout_width="match_parent"
+           android:gravity="center"
+           android:layout_marginTop="24dp"
+           android:layout_marginBottom="24dp"
+           android:layout_below="@id/txv_total"
+           android:textSize="24sp"
            android:layout_height="wrap_content" />
    </RelativeLayout>
 
-    <TextView
-        android:text="@string/thanks"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
-        android:textSize="24sp"
-        android:layout_height="wrap_content" />
 
     <Button
         android:text="order"
