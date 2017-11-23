@@ -22,9 +22,10 @@
        android:layout_height="wrap_content">
    <CheckBox
        android:id="@+id/cBox_1"
-       android:padding="5dp"
        android:text="Whipped"
+       android:paddingLeft="24dp"
        android:layout_width="wrap_content"
+       android:textSize="16sp"
        android:layout_weight="1"
        android:layout_height="0dp" />
 
@@ -34,7 +35,8 @@
            android:layout_height="0dp"
            android:layout_weight="1"
            android:checked="false"
-           android:padding="5dp"
+           android:paddingLeft="24dp"
+           android:textSize="16dp"
            android:text="Whipped" />
    </LinearLayout>
 
