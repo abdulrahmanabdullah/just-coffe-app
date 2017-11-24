@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="16dp"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.abdulrahman.just_coffe.MainActivity">
 
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/et_customer_name"
+        android:hint="please enter your name."
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/txv_topping"
         android:layout_width="wrap_content"
@@ -22,7 +34,7 @@
        android:layout_height="wrap_content">
    <CheckBox
        android:id="@+id/cBox_1"
-       android:text="Whipped"
+       android:text="Whipped Cream"
        android:paddingLeft="24dp"
        android:layout_width="wrap_content"
        android:textSize="16sp"
@@ -37,7 +49,7 @@
            android:checked="false"
            android:paddingLeft="24dp"
            android:textSize="16dp"
-           android:text="Whipped" />
+           android:text="Chocolate Topping" />
    </LinearLayout>
 
     <TextView
@@ -80,14 +92,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
-
-    <EditText
-        android:id="@+id/et_customer_name"
-        android:hint="please enter your name."
-        android:gravity="center"
-        android:visibility="visible"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
     <TextView
         android:text="@string/summer_order"
         android:gravity="center"
@@ -100,7 +104,6 @@
 
    <RelativeLayout
        android:layout_marginTop="24dp"
-       android:visibility="gone"
        android:id="@+id/show_info_order"
        android:padding="16dp"
        android:layout_width="match_parent"
@@ -114,8 +117,9 @@
           android:layout_height="wrap_content" />
        <TextView
            android:id="@+id/txv_customer_name"
-           android:gravity="center"
+           android:gravity="left"
            android:hint="show customer name"
+           android:paddingLeft="16dp"
            android:layout_toEndOf="@id/txv_name"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
@@ -130,10 +134,11 @@
 
        <TextView
            android:layout_below="@id/txv_name"
+           android:paddingLeft="16dp"
            android:id="@+id/txv_get_flavor"
            android:hint=" Here Show which flaver custo"
            android:layout_toRightOf="@id/txv_flavor"
-           android:gravity="center"
+           android:gravity="left"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
 
@@ -149,7 +154,8 @@
            android:hint=" Here show total price."
            android:layout_toRightOf="@id/txv_show_quantity"
            android:layout_below="@id/txv_flavor"
-           android:gravity="center"
+           android:paddingLeft="16dp"
+           android:gravity="left"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
 
@@ -164,7 +170,8 @@
            android:layout_below="@id/txv_show_quantity"
            android:layout_toRightOf="@id/txv_total"
            android:hint="Here show cups quantity"
-           android:gravity="center"
+           android:gravity="left"
+           android:paddingLeft="16dp"
            android:id="@+id/txv_total_price"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content" />
@@ -191,3 +198,4 @@
         android:layout_height="wrap_content"
          />
 </LinearLayout>
+</ScrollView>

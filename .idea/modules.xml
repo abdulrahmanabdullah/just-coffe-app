@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Justcoffe.iml" filepath="$PROJECT_DIR$/Justcoffe.iml" />
+      <module fileurl="file://Z:\AndroidProject\just-coffe-app\Justcoffe.iml" filepath="Z:\AndroidProject\just-coffe-app\Justcoffe.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://Z:\AndroidProject\just-coffe-app\app\app.iml" filepath="Z:\AndroidProject\just-coffe-app\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/just-coffe-app.iml" filepath="$PROJECT_DIR$/.idea/just-coffe-app.iml" />
     </modules>
   </component>
 </project>

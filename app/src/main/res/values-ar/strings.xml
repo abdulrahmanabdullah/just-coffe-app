@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">بس جافا</string>
+    <string name="toppings">اضافات</string>
+    <string name="quantity">العدد</string>
+    <string name="summer_order">ملخص الطلب</string>
+    <string name="customer_name">اسم العميل</string>
+    <string name="add_flaver">اضافة نكهة</string>
+    <string name="total">الحساب</string>
+    <string name="thanks">شكراً</string>
+</resources>
